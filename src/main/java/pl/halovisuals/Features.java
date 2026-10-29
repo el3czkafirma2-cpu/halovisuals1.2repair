@@ -251,7 +251,7 @@ public final class Features {
         // atmosphere
         if (on("Atmosphere")) {
             Module am = mod("Atmosphere");
-            if (am.on("Lock Time")) c.world.setTimeOfDay((long) am.num("Time"));
+            // if (am.on("Lock Time")) c.world.setTimeOfDay((long) am.num("Time"));
             if (am.on("Clear Weather")) { c.world.setRainGradient(0f); c.world.setThunderGradient(0f); }
         }
 
